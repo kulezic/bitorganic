@@ -1,4 +1,4 @@
-package com.ak.bitorganic.dto;
+package com.ak.bitorganic.dto.producer;
 
 public class ProducerCreateDto {
 
@@ -8,7 +8,6 @@ public class ProducerCreateDto {
     private Long BPG;
 
     private Long groupId;
-    private String organicStatus;
 
     public ProducerCreateDto() {
     }
@@ -24,7 +23,6 @@ public class ProducerCreateDto {
         this.surname = surname;
         this.BPG = BPG;
         this.groupId = groupId;
-        this.organicStatus = organicStatus;
     }
 
     public Long getProducerNumber() {
@@ -65,13 +63,5 @@ public class ProducerCreateDto {
 
     public void setGroupId(Long groupId) {
         this.groupId = groupId;
-    }
-
-    public String getOrganicStatus() {
-        return organicStatus;
-    }
-
-    public void setOrganicStatus(String organicStatus) {
-        this.organicStatus = organicStatus;
     }
 }

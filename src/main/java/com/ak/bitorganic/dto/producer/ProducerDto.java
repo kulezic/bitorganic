@@ -1,4 +1,7 @@
-package com.ak.bitorganic.dto;
+package com.ak.bitorganic.dto.producer;
+
+import com.ak.bitorganic.dto.fieldstructure.FieldStructureDto;
+import com.ak.bitorganic.dto.group.GroupDto;
 
 import java.util.List;
 
@@ -10,10 +13,10 @@ public class ProducerDto {
     private String surname;
     private Long BPG;
 
-    private Long groupNumber;
-    private String organicStatus;
+    private GroupDto groupDto;
 
-    private List<FieldStructureDto> fieldStructureDtoList;
+    private List<FieldStructureDto> currFieldStructureDtoList;
+    private List<FieldStructureDto> pastFieldStructureDtoList;
 
     public ProducerDto() {
     }
@@ -23,17 +26,17 @@ public class ProducerDto {
                        String name,
                        String surname,
                        Long BPG,
-                       Long groupNumber,
-                       String organicStatus,
-                       List<FieldStructureDto> fieldStructureDtoList) {
+                       GroupDto groupDto,
+                       List<FieldStructureDto> currFieldStructureDtoList,
+                       List<FieldStructureDto> pastFieldStructureDtoList) {
         this.producerId = producerId;
         this.producerNumber = producerNumber;
         this.name = name;
         this.surname = surname;
         this.BPG = BPG;
-        this.groupNumber = groupNumber;
-        this.organicStatus = organicStatus;
-        this.fieldStructureDtoList = fieldStructureDtoList;
+        this.groupDto = groupDto;
+        this.currFieldStructureDtoList = currFieldStructureDtoList;
+        this.pastFieldStructureDtoList = pastFieldStructureDtoList;
     }
 
     public Long getProducerId() {
@@ -76,27 +79,27 @@ public class ProducerDto {
         this.BPG = BPG;
     }
 
-    public Long getGroupNumber() {
-        return groupNumber;
+    public GroupDto getGroupDto() {
+        return groupDto;
     }
 
-    public void setGroupNumber(Long groupNumber) {
-        this.groupNumber = groupNumber;
+    public void setGroupDto(GroupDto groupDto) {
+        this.groupDto = groupDto;
     }
 
-    public String getOrganicStatus() {
-        return organicStatus;
+    public List<FieldStructureDto> getCurrFieldStructureDtoList() {
+        return currFieldStructureDtoList;
     }
 
-    public void setOrganicStatus(String organicStatus) {
-        this.organicStatus = organicStatus;
+    public void setCurrFieldStructureDtoList(List<FieldStructureDto> currFieldStructureDtoList) {
+        this.currFieldStructureDtoList = currFieldStructureDtoList;
     }
 
-    public List<FieldStructureDto> getFieldStructureDtoList() {
-        return fieldStructureDtoList;
+    public List<FieldStructureDto> getPastFieldStructureDtoList() {
+        return pastFieldStructureDtoList;
     }
 
-    public void setFieldStructureDtoList(List<FieldStructureDto> fieldStructureDtoList) {
-        this.fieldStructureDtoList = fieldStructureDtoList;
+    public void setPastFieldStructureDtoList(List<FieldStructureDto> pastFieldStructureDtoList) {
+        this.pastFieldStructureDtoList = pastFieldStructureDtoList;
     }
 }

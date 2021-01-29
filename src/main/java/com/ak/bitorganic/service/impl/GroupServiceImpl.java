@@ -1,12 +1,10 @@
 package com.ak.bitorganic.service.impl;
 
-import com.ak.bitorganic.domain.FieldStructure;
 import com.ak.bitorganic.domain.Group;
-import com.ak.bitorganic.dto.GroupCreateDto;
-import com.ak.bitorganic.dto.GroupDto;
+import com.ak.bitorganic.dto.group.GroupCreateDto;
+import com.ak.bitorganic.dto.group.GroupDto;
 import com.ak.bitorganic.exception.NotFoundException;
 import com.ak.bitorganic.mapper.GroupMapper;
-import com.ak.bitorganic.mapper.ProductMapper;
 import com.ak.bitorganic.repository.GroupRepository;
 import com.ak.bitorganic.repository.ProducerRepository;
 import com.ak.bitorganic.service.GroupService;

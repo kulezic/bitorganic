@@ -1,8 +1,8 @@
 package com.ak.bitorganic.service;
 
 import com.ak.bitorganic.domain.Group;
-import com.ak.bitorganic.dto.GroupCreateDto;
-import com.ak.bitorganic.dto.GroupDto;
+import com.ak.bitorganic.dto.group.GroupCreateDto;
+import com.ak.bitorganic.dto.group.GroupDto;
 import org.springframework.data.jpa.domain.Specification;
 
 import java.util.List;

@@ -1,8 +1,9 @@
 package com.ak.bitorganic.controller;
 
-import com.ak.bitorganic.domain.Group;
 import com.ak.bitorganic.domain.Product;
-import com.ak.bitorganic.dto.*;
+import com.ak.bitorganic.dto.product.FreshProductCreateDto;
+import com.ak.bitorganic.dto.product.ProcessedProductCreateDto;
+import com.ak.bitorganic.dto.product.ProductDto;
 import com.ak.bitorganic.service.ProductService;
 import com.sipios.springsearch.anotation.SearchSpec;
 import org.springframework.beans.factory.annotation.Autowired;

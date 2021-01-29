@@ -2,9 +2,9 @@ package com.ak.bitorganic.service.impl;
 
 import com.ak.bitorganic.domain.Group;
 import com.ak.bitorganic.domain.Producer;
-import com.ak.bitorganic.dto.ProducerCreateDto;
-import com.ak.bitorganic.dto.ProducerDto;
-import com.ak.bitorganic.enums.OrganicStatus;
+import com.ak.bitorganic.dto.producer.ProducerCreateDto;
+import com.ak.bitorganic.dto.producer.ProducerDto;
+import com.ak.bitorganic.enums.OrganicStatusEnum;
 import com.ak.bitorganic.exception.NotFoundException;
 import com.ak.bitorganic.mapper.ProducerMapper;
 import com.ak.bitorganic.repository.GroupRepository;
@@ -43,7 +43,7 @@ public class ProducerServiceImpl implements ProducerService {
         producer.setSurname(producerCreateDto.getSurname());
         producer.setBPG(producerCreateDto.getBPG());
         producer.setGroup(group);
-        producer.setOrganicStatus(OrganicStatus.valueOf(producerCreateDto.getOrganicStatus()));
+        producer.setOrganicStatus(OrganicStatusEnum.valueOf(producerCreateDto.getOrganicStatus()));
         if (producerRepository.save(producer) == null) return false;
         return true;
     }

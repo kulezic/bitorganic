@@ -1,7 +1,7 @@
 package com.ak.bitorganic.mapper;
 
 import com.ak.bitorganic.domain.Product;
-import com.ak.bitorganic.dto.ProductDto;
+import com.ak.bitorganic.dto.product.ProductDto;
 import org.springframework.stereotype.Component;
 
 @Component

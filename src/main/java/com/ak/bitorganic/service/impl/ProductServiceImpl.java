@@ -1,10 +1,10 @@
 package com.ak.bitorganic.service.impl;
 
 import com.ak.bitorganic.domain.Product;
-import com.ak.bitorganic.dto.FreshProductCreateDto;
-import com.ak.bitorganic.dto.ProcessedProductCreateDto;
-import com.ak.bitorganic.dto.ProductDto;
-import com.ak.bitorganic.dto.ProductUpdateDto;
+import com.ak.bitorganic.dto.product.FreshProductCreateDto;
+import com.ak.bitorganic.dto.product.ProcessedProductCreateDto;
+import com.ak.bitorganic.dto.product.ProductDto;
+import com.ak.bitorganic.dto.product.ProductUpdateDto;
 import com.ak.bitorganic.enums.ProductType;
 import com.ak.bitorganic.exception.DeleteForbidden;
 import com.ak.bitorganic.exception.NotFoundException;

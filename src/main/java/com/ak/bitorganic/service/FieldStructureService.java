@@ -1,7 +1,7 @@
 package com.ak.bitorganic.service;
 
-import com.ak.bitorganic.dto.FieldStructureCreateDto;
-import com.ak.bitorganic.dto.FieldStructureDto;
+import com.ak.bitorganic.dto.fieldstructure.FieldStructureCreateDto;
+import com.ak.bitorganic.dto.fieldstructure.FieldStructureDto;
 
 public interface FieldStructureService {
 

@@ -1,7 +1,7 @@
 package com.ak.bitorganic.mapper;
 
 import com.ak.bitorganic.domain.FieldStructure;
-import com.ak.bitorganic.dto.FieldStructureDto;
+import com.ak.bitorganic.dto.fieldstructure.FieldStructureDto;
 import org.springframework.stereotype.Component;
 
 @Component

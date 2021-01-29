@@ -1,15 +1,14 @@
 package com.ak.bitorganic.service.impl;
 
 import com.ak.bitorganic.domain.Batch;
-import com.ak.bitorganic.dto.BatchCreateDto;
-import com.ak.bitorganic.dto.BatchDto;
+import com.ak.bitorganic.dto.batch.BatchCreateDto;
+import com.ak.bitorganic.dto.batch.BatchDto;
 import com.ak.bitorganic.repository.BatchRepository;
 import com.ak.bitorganic.service.BatchService;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class BatchServiceImpl implements BatchService {

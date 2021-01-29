@@ -1,6 +1,6 @@
-package com.ak.bitorganic.dto;
+package com.ak.bitorganic.dto.productionorder;
 
-import com.ak.bitorganic.domain.Batch;
+import com.ak.bitorganic.dto.batch.BatchDto;
 
 import java.util.Date;
 import java.util.List;

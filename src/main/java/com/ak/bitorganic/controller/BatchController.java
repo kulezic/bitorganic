@@ -1,7 +1,7 @@
 package com.ak.bitorganic.controller;
 
 import com.ak.bitorganic.domain.Batch;
-import com.ak.bitorganic.dto.BatchDto;
+import com.ak.bitorganic.dto.batch.BatchDto;
 import com.ak.bitorganic.service.BatchService;
 import com.sipios.springsearch.anotation.SearchSpec;
 import org.springframework.beans.factory.annotation.Autowired;

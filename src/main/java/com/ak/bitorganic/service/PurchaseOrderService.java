@@ -1,8 +1,8 @@
 package com.ak.bitorganic.service;
 
 import com.ak.bitorganic.domain.PurchaseOrder;
-import com.ak.bitorganic.dto.PurchaseOrderCreateDto;
-import com.ak.bitorganic.dto.PurchaseOrderDto;
+import com.ak.bitorganic.dto.purchaseorder.PurchaseOrderCreateDto;
+import com.ak.bitorganic.dto.purchaseorder.PurchaseOrderDto;
 import org.springframework.data.jpa.domain.Specification;
 
 import java.util.List;

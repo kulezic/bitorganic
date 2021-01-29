@@ -1,8 +1,8 @@
 package com.ak.bitorganic.service;
 
 import com.ak.bitorganic.domain.Producer;
-import com.ak.bitorganic.dto.ProducerCreateDto;
-import com.ak.bitorganic.dto.ProducerDto;
+import com.ak.bitorganic.dto.producer.ProducerCreateDto;
+import com.ak.bitorganic.dto.producer.ProducerDto;
 import org.springframework.data.jpa.domain.Specification;
 
 import java.util.List;

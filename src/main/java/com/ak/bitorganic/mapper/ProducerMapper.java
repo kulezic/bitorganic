@@ -1,7 +1,7 @@
 package com.ak.bitorganic.mapper;
 
 import com.ak.bitorganic.domain.Producer;
-import com.ak.bitorganic.dto.ProducerDto;
+import com.ak.bitorganic.dto.producer.ProducerDto;
 import org.springframework.stereotype.Component;
 
 import java.util.stream.Collectors;
@@ -23,7 +23,7 @@ public class ProducerMapper {
         producerDto.setBPG(producer.getBPG());
         producerDto.setGroupNumber(producer.getGroup().getGroupNumber());
         producerDto.setOrganicStatus(producer.getOrganicStatus().toString());
-        producerDto.setFieldStructureDtoList(producer.getFieldStructures().stream()
+        producerDto.setCurrFieldStructureDtoList(producer.getFieldStructures().stream()
                 .map(fieldStructureMapper::fieldStructureToFieldStructureDto).collect(Collectors.toList()));
         return producerDto;
     }

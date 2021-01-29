@@ -13,15 +13,18 @@ public class Batch {
     private Long batchId;
 
     private Long batchNumber;
+    private String LOTNumber;
     private Date createdDate;
-    private Long LOTNumber; //TODO Generate Lot number when creating Batch
 
     @ManyToOne
     private Product product;
 
+    @ManyToOne
+    private Group group;
+
     private Long batchWeight;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "batch", orphanRemoval = false)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "batch", orphanRemoval = true)
     private List<PurchaseOrder> purchaseOrders;
 
     @ManyToOne
@@ -49,11 +52,11 @@ public class Batch {
         this.batchNumber = batchNumber;
     }
 
-    public Long getLOTNumber() {
+    public String getLOTNumber() {
         return LOTNumber;
     }
 
-    public void setLOTNumber(Long LOTNumber) {
+    public void setLOTNumber(String LOTNumber) {
         this.LOTNumber = LOTNumber;
     }
 
@@ -103,5 +106,21 @@ public class Batch {
 
     public void setCreatedDate(Date createdDate) {
         this.createdDate = createdDate;
+    }
+
+    public Group getGroup() {
+        return group;
+    }
+
+    public void setGroup(Group group) {
+        this.group = group;
+    }
+
+    public List<PurchaseOrder> getPurchaseOrders() {
+        return purchaseOrders;
+    }
+
+    public void setPurchaseOrders(List<PurchaseOrder> purchaseOrders) {
+        this.purchaseOrders = purchaseOrders;
     }
 }

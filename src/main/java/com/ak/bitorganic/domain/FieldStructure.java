@@ -1,6 +1,7 @@
 package com.ak.bitorganic.domain;
 
 import javax.persistence.*;
+import java.time.Year;
 
 @Entity
 public class FieldStructure {
@@ -15,6 +16,9 @@ public class FieldStructure {
     @ManyToOne
     private Product product;
     private Long acreage;
+
+    private Year startYear;
+    private Year endYear;
 
     public FieldStructure() {
     }
@@ -49,5 +53,21 @@ public class FieldStructure {
 
     public void setAcreage(Long acreage) {
         this.acreage = acreage;
+    }
+
+    public Year getStartYear() {
+        return startYear;
+    }
+
+    public void setStartYear(Year startYear) {
+        this.startYear = startYear;
+    }
+
+    public Year getEndYear() {
+        return endYear;
+    }
+
+    public void setEndYear(Year endYear) {
+        this.endYear = endYear;
     }
 }

@@ -1,4 +1,4 @@
-package com.ak.bitorganic.dto;
+package com.ak.bitorganic.dto.product;
 
 public class ProcessedProductCreateDto {
 

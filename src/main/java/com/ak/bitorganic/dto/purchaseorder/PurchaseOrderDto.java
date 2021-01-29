@@ -1,4 +1,6 @@
-package com.ak.bitorganic.dto;
+package com.ak.bitorganic.dto.purchaseorder;
+
+import com.ak.bitorganic.dto.producer.ProducerDto;
 
 import java.util.Date;
 

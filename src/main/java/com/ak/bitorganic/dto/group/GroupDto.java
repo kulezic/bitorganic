@@ -1,6 +1,10 @@
-package com.ak.bitorganic.dto;
+package com.ak.bitorganic.dto.group;
 
 
+
+import com.ak.bitorganic.domain.OrganicStatus;
+import com.ak.bitorganic.dto.organicstatus.OrganicStatusDto;
+import com.ak.bitorganic.dto.producer.ProducerDto;
 
 import java.util.List;
 
@@ -13,7 +17,7 @@ public class GroupDto {
     private Long PIB;
 
     private List<ProducerDto> producerDtoList;
-    private String organicStatus;
+    private OrganicStatusDto currOrganicStatus;
 
     public GroupDto() {
     }
@@ -23,13 +27,13 @@ public class GroupDto {
                     String companyName,
                     Long PIB,
                     List<ProducerDto> producerDtoList,
-                    String organicStatus) {
+                    OrganicStatusDto currOrganicStatus) {
         this.groupId = groupId;
         this.groupNumber = groupNumber;
         this.companyName = companyName;
         this.PIB = PIB;
         this.producerDtoList = producerDtoList;
-        this.organicStatus = organicStatus;
+        this.currOrganicStatus = currOrganicStatus;
     }
 
     public Long getGroupId() {
@@ -72,11 +76,11 @@ public class GroupDto {
         this.producerDtoList = producers;
     }
 
-    public String getOrganicStatus() {
-        return organicStatus;
+    public OrganicStatusDto getCurrOrganicStatus() {
+        return currOrganicStatus;
     }
 
-    public void setOrganicStatus(String organicStatus) {
-        this.organicStatus = organicStatus;
+    public void setCurrOrganicStatus(OrganicStatusDto currOrganicStatus) {
+        this.currOrganicStatus = currOrganicStatus;
     }
 }

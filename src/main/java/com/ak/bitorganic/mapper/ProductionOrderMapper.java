@@ -1,7 +1,7 @@
 package com.ak.bitorganic.mapper;
 
 import com.ak.bitorganic.domain.ProductionOrder;
-import com.ak.bitorganic.dto.ProductionOrderDto;
+import com.ak.bitorganic.dto.productionorder.ProductionOrderDto;
 import org.springframework.stereotype.Component;
 
 import java.util.stream.Collectors;

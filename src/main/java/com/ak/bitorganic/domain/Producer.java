@@ -1,6 +1,6 @@
 package com.ak.bitorganic.domain;
 
-import com.ak.bitorganic.enums.OrganicStatus;
+import com.ak.bitorganic.enums.OrganicStatusEnum;
 
 import javax.persistence.*;
 import java.util.List;
@@ -20,8 +20,8 @@ public class Producer {
     @ManyToOne
     private Group group;
 
-    @Enumerated(EnumType.STRING)
-    private OrganicStatus organicStatus;
+    @OneToOne
+    private ProducerStatus producerStatus;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "producer", orphanRemoval = true)
     private List<FieldStructure> fieldStructures;
@@ -30,13 +30,21 @@ public class Producer {
     public Producer() {
     }
 
-    public Producer(String name,
+    public Producer(Long producerId,
+                    Long producerNumber,
+                    String name,
                     String surname,
                     Long BPG,
+                    Group group,
+                    ProducerStatus producerStatus,
                     List<FieldStructure> fieldStructures) {
+        this.producerId = producerId;
+        this.producerNumber = producerNumber;
         this.name = name;
         this.surname = surname;
         this.BPG = BPG;
+        this.group = group;
+        this.producerStatus = producerStatus;
         this.fieldStructures = fieldStructures;
     }
 
@@ -88,14 +96,6 @@ public class Producer {
         this.group = group;
     }
 
-    public OrganicStatus getOrganicStatus() {
-        return organicStatus;
-    }
-
-    public void setOrganicStatus(OrganicStatus organicStatus) {
-        this.organicStatus = organicStatus;
-    }
-
     public List<FieldStructure> getFieldStructures() {
         return fieldStructures;
     }
@@ -106,5 +106,13 @@ public class Producer {
 
     public void addFieldStructure(FieldStructure fieldStructure){
         this.fieldStructures.add(fieldStructure);
+    }
+
+    public ProducerStatus getProducerStatus() {
+        return producerStatus;
+    }
+
+    public void setProducerStatus(ProducerStatus producerStatus) {
+        this.producerStatus = producerStatus;
     }
 }

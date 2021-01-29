@@ -1,4 +1,6 @@
-package com.ak.bitorganic.dto;
+package com.ak.bitorganic.dto.productionorder;
+
+import com.ak.bitorganic.dto.batch.BatchCreateDto;
 
 import java.util.Date;
 import java.util.List;

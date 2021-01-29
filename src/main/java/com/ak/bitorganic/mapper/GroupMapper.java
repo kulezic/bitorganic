@@ -1,7 +1,7 @@
 package com.ak.bitorganic.mapper;
 
 import com.ak.bitorganic.domain.Group;
-import com.ak.bitorganic.dto.GroupDto;
+import com.ak.bitorganic.dto.group.GroupDto;
 import org.springframework.stereotype.Component;
 
 import java.util.stream.Collectors;

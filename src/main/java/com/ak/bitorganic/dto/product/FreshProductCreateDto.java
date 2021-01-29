@@ -1,6 +1,7 @@
-package com.ak.bitorganic.dto;
+package com.ak.bitorganic.dto.product;
 
 public class FreshProductCreateDto {
+
     private String productName;
     private String productDesignation;
 

@@ -1,7 +1,7 @@
 package com.ak.bitorganic.mapper;
 
 import com.ak.bitorganic.domain.PurchaseOrder;
-import com.ak.bitorganic.dto.PurchaseOrderDto;
+import com.ak.bitorganic.dto.purchaseorder.PurchaseOrderDto;
 import org.springframework.stereotype.Component;
 
 @Component

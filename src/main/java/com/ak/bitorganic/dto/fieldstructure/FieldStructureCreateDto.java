@@ -1,4 +1,6 @@
-package com.ak.bitorganic.dto;
+package com.ak.bitorganic.dto.fieldstructure;
+
+import java.time.Year;
 
 public class FieldStructureCreateDto {
 
@@ -7,12 +9,19 @@ public class FieldStructureCreateDto {
     private String productDesignation;
     private Long acreage;
 
+    private Year startYear;
+    private Year endYear;
+
     public FieldStructureCreateDto(Long producerId,
                                    String productDesignation,
-                                   Long acreage) {
+                                   Long acreage,
+                                   Year startYear,
+                                   Year endYear) {
         this.producerId = producerId;
         this.productDesignation = productDesignation;
         this.acreage = acreage;
+        this.startYear = startYear;
+        this.endYear = endYear;
     }
 
     public FieldStructureCreateDto() {
@@ -40,5 +49,21 @@ public class FieldStructureCreateDto {
 
     public void setAcreage(Long acreage) {
         this.acreage = acreage;
+    }
+
+    public Year getStartYear() {
+        return startYear;
+    }
+
+    public void setStartYear(Year startYear) {
+        this.startYear = startYear;
+    }
+
+    public Year getEndYear() {
+        return endYear;
+    }
+
+    public void setEndYear(Year endYear) {
+        this.endYear = endYear;
     }
 }

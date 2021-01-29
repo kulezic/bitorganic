@@ -1,11 +1,8 @@
 package com.ak.bitorganic.controller;
 
-import com.ak.bitorganic.domain.Group;
 import com.ak.bitorganic.domain.PurchaseOrder;
-import com.ak.bitorganic.dto.GroupCreateDto;
-import com.ak.bitorganic.dto.GroupDto;
-import com.ak.bitorganic.dto.PurchaseOrderCreateDto;
-import com.ak.bitorganic.dto.PurchaseOrderDto;
+import com.ak.bitorganic.dto.purchaseorder.PurchaseOrderCreateDto;
+import com.ak.bitorganic.dto.purchaseorder.PurchaseOrderDto;
 import com.ak.bitorganic.service.PurchaseOrderService;
 import com.sipios.springsearch.anotation.SearchSpec;
 import org.springframework.beans.factory.annotation.Autowired;

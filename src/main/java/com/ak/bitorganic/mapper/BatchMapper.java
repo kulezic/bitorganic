@@ -1,7 +1,7 @@
 package com.ak.bitorganic.mapper;
 
 import com.ak.bitorganic.domain.Batch;
-import com.ak.bitorganic.dto.BatchDto;
+import com.ak.bitorganic.dto.batch.BatchDto;
 import org.springframework.stereotype.Component;
 
 @Component

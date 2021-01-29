@@ -1,9 +1,8 @@
 package com.ak.bitorganic.controller;
 
-import com.ak.bitorganic.domain.Batch;
 import com.ak.bitorganic.domain.Group;
-import com.ak.bitorganic.dto.GroupCreateDto;
-import com.ak.bitorganic.dto.GroupDto;
+import com.ak.bitorganic.dto.group.GroupCreateDto;
+import com.ak.bitorganic.dto.group.GroupDto;
 import com.ak.bitorganic.service.GroupService;
 import com.sipios.springsearch.anotation.SearchSpec;
 import org.springframework.beans.factory.annotation.Autowired;

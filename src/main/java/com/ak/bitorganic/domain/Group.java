@@ -1,6 +1,6 @@
 package com.ak.bitorganic.domain;
 
-import com.ak.bitorganic.enums.OrganicStatus;
+import com.ak.bitorganic.enums.OrganicStatusEnum;
 
 import javax.persistence.*;
 import java.util.List;
@@ -19,7 +19,7 @@ public class Group {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "group", orphanRemoval = true)
     private List<Producer> producers;
 
-    @Enumerated(EnumType.STRING)
+    @OneToOne
     private OrganicStatus organicStatus;
 
     public Group() {

@@ -1,23 +1,34 @@
-package com.ak.bitorganic.dto;
+package com.ak.bitorganic.dto.batch;
 
+
+import com.ak.bitorganic.dto.group.GroupDto;
+import com.ak.bitorganic.dto.product.ProductDto;
 
 public class BatchDto {
 
     private Long batchId;
+
     private Long batchNumber;
-    private Long LOTNumber;
+    private String LOTNumber;
     private ProductDto productDto;
     private Long batchWeight;
+    private GroupDto groupDto;
 
     public BatchDto() {
     }
 
-    public BatchDto(Long batchId, Long batchNumber, Long LOTNumber, ProductDto productDto, Long batchWeight) {
+    public BatchDto(Long batchId,
+                    Long batchNumber,
+                    String LOTNumber,
+                    ProductDto productDto,
+                    Long batchWeight,
+                    GroupDto groupDto) {
         this.batchId = batchId;
         this.batchNumber = batchNumber;
         this.LOTNumber = LOTNumber;
         this.productDto = productDto;
         this.batchWeight = batchWeight;
+        this.groupDto = groupDto;
     }
 
     public Long getBatchId() {
@@ -36,11 +47,11 @@ public class BatchDto {
         this.batchNumber = batchNumber;
     }
 
-    public Long getLOTNumber() {
+    public String getLOTNumber() {
         return LOTNumber;
     }
 
-    public void setLOTNumber(Long LOTNumber) {
+    public void setLOTNumber(String LOTNumber) {
         this.LOTNumber = LOTNumber;
     }
 
@@ -58,5 +69,13 @@ public class BatchDto {
 
     public void setBatchWeight(Long batchWeight) {
         this.batchWeight = batchWeight;
+    }
+
+    public GroupDto getGroupDto() {
+        return groupDto;
+    }
+
+    public void setGroupDto(GroupDto groupDto) {
+        this.groupDto = groupDto;
     }
 }
